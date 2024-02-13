@@ -1,8 +1,8 @@
-// App.js
 import React, { useState } from 'react';
 import Navigation from './Navbar';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
+import ArticleListItem from './ArticleListItem';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -59,9 +59,8 @@ const App = () => {
             {undefined !== searchResults && searchResults.length > 0 && (
               <ul>
                 {searchResults.map((result) => (
-                  <li key={result.id} data-date={result.createdDate}>
-                    <span>{result.createdDate}: </span>
-                    {result.title}
+                  <li key={result.id} data-date={result.createdDate}>                    
+                    <ArticleListItem key={result.id} result={result} />
                   </li>
                 ))}
               </ul>
