@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-=======
-// App.js
->>>>>>> b4799fa (Transfer From Thymeleaf)
 import React, { useState } from 'react';
 import Navigation from './Navbar';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
-<<<<<<< HEAD
 import ArticleListItem from './ArticleListItem';
-=======
->>>>>>> b4799fa (Transfer From Thymeleaf)
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -65,16 +58,8 @@ const App = () => {
             </div>
             {undefined !== searchResults && searchResults.length > 0 && (
               <ul>
-                {searchResults.map((result) => (
-<<<<<<< HEAD
-                  <li key={result.id} data-date={result.createdDate}>                    
-                    <ArticleListItem key={result.id} result={result} />
-=======
-                  <li key={result.id} data-date={result.createdDate}>
-                    <span>{result.createdDate}: </span>
-                    {result.title}
->>>>>>> b4799fa (Transfer From Thymeleaf)
-                  </li>
+                {searchResults.map((result) => (                    
+                    <ArticleListItem key={result.id} result={result} />                  
                 ))}
               </ul>
             )}

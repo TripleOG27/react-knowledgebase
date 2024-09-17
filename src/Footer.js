@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-// Footer.js
->>>>>>> b4799fa (Transfer From Thymeleaf)
 import React from 'react';
 import { Container } from 'react-bootstrap';
 

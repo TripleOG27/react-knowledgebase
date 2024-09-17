@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-// Navbar.js
->>>>>>> b4799fa (Transfer From Thymeleaf)
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
