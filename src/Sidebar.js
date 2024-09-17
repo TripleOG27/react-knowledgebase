@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// Sidebar.js
+>>>>>>> b4799fa (Transfer From Thymeleaf)
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 
