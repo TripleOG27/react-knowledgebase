@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+ul {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+ul li::before {
+  content: attr(data-date); /* Use the 'createdDate' as content */
+  font-weight: bold;
+  margin-right: 10px; /* Add space between date and title */
+}
